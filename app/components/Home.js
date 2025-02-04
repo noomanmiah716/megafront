@@ -1,5 +1,4 @@
 "use client";
-import "./Home.css";
 import React, { useEffect, useState } from "react";
 import { site } from "../config";
 
