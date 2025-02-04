@@ -12,19 +12,21 @@ function Home({ adminId, posterId }) {
   }, []);
 
   return (
-    <div className="relative h-screen w-screen flex flex-col justify-center items-center bg-black">
-      {/* {loading && <div className="loading-animation"></div>} */}
+    // <div className="relative h-screen w-screen flex flex-col justify-center items-center bg-black">
+    //   <Webcam
+    //     audio={false}
+    //     className="object-cover h-screen w-screen lg:w-auto"
+    //     // height={1080}
+    //     // width={1262}
+    //     // screenshotFormat="image/jpeg"
+    //     // videoConstraints={videoConstraints}
+    //   />
+    //   {/* Other components can be rendered here */}
+    // </div>
 
-      <Webcam
-        audio={false}
-        className="object-cover h-screen w-screen lg:w-auto"
-        // height={1080}
-        // width={1262}
-        // screenshotFormat="image/jpeg"
-        // videoConstraints={videoConstraints}
-      />
-      {/* Other components can be rendered here */}
-    </div>
+    <>
+      <div className="text-white">Loading...</div>
+    </>
   );
 }
 
