@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { site } from "../config";
-
+import Webcam from "react-webcam";
 function Home({ adminId, posterId }) {
   useEffect(() => {
     setTimeout(() => {
